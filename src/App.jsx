@@ -1,5 +1,19 @@
+import { Route, Routes } from "react-router-dom";
+import { Footer, Header } from "./components";
+import { Home } from "./pages";
+
 const App = () => {
-  return <h1 className="text-3xl font-bold underline bg-black text-white text-center py-3 sm:text-red-600 font-montserrat">Hello world!</h1>;
+  return (
+    <>
+      <Header />
+      <main className="flex-grow-[1]">
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </main>
+      <Footer />
+    </>
+  );
 };
 
 export default App;
