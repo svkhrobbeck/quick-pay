@@ -23,3 +23,18 @@ body {
 .sidebar {
   animation: slide-sidebar 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
+@keyframes slide-sidebar {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* .bg-black-gradient {
+  background-image: linear-gradient(to top, #fff - 278%, #6d6d6d -78%, #11101d 91%);
+} */
