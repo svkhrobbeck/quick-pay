@@ -4,7 +4,7 @@ import { layout, styles } from "../constants/styles";
 
 const Contract = () => {
   return (
-    <section className={layout.section}>
+    <section className={layout.section} id="product">
       <div className={`${styles.container} ${layout.wrapper}`}>
         <div className={`${layout.sectionInfo}`}>
           <h2 className={`${styles.heading2} mb-5`}>
