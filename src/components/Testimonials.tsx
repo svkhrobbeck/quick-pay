@@ -1,8 +1,9 @@
+import * as React from "react";
 import { feedbacks } from "../constants/constants";
 import { styles } from "../constants/styles";
-import { FeedbackCard } from "./";
+import { FeedbackCard } from ".";
 
-const Testimonials = () => {
+const Testimonials: React.FC = (): JSX.Element => {
   return (
     <section className={`mb-12`}>
       <div className={styles.container}>

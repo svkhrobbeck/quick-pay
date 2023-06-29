@@ -1,6 +1,8 @@
+import * as React from "react";
 import { styles } from "../constants/styles";
+import { IFeatures } from "../interfaces";
 
-const FeatureCard = ({ idx, id, icon, title, content }) => {
+const FeatureCard: React.FC<IFeatures> = ({ icon, title, content }): JSX.Element => {
   return (
     <div
       className={`flex  flex-row p-6 rounded-[20px] cursor-pointer [&:not(:last-child)]:mb-6 hover:shadow-card transition-all hover:bg-gradient-black duration-300`}

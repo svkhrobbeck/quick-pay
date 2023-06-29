@@ -1,8 +1,9 @@
+import * as React from "react";
 import { card } from "../assets";
-import { Button } from "./";
+import { Button } from ".";
 import { layout, styles } from "../constants/styles";
 
-const Contract = () => {
+const Contract: React.FC = (): JSX.Element => {
   return (
     <section className={layout.section} id="product">
       <div className={`${styles.container} ${layout.wrapper}`}>

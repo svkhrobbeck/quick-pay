@@ -1,8 +1,9 @@
 import { discount, robot } from "../assets";
+import * as React from "react";
 import { styles } from "../constants/styles";
 import Button from "./Button";
 
-const Hero = () => {
+const Hero: React.FC = (): JSX.Element => {
   return (
     <section className="font-montserrat py-6 lg:py-9 xl:py-12">
       <div className={`${styles.flexBetween} ${styles.container} lg:flex-row flex-col`}>

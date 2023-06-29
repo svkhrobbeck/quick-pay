@@ -1,8 +1,9 @@
+import * as React from "react";
 import { clients } from "../constants/constants";
 import { styles } from "../constants/styles";
-import { ClientCard } from "./";
+import { ClientCard } from ".";
 
-const Clients = () => {
+const Clients: React.FC = (): JSX.Element => {
   return (
     <section className={`${styles.flexCenter} ${styles.container} my-4`} id="clients">
       <div className={`flex justify-center items-center lg:justify-between gap-[50px] flex-wrap w-full`}>

@@ -1,9 +1,10 @@
+import * as React from "react";
 import { logo } from "../assets";
 import { footerLinks, socials } from "../constants/constants";
 import { styles } from "../constants/styles";
-import { FooterLinks } from "./";
+import { FooterLinks } from ".";
 
-const Footer = () => {
+const Footer: React.FC = (): JSX.Element => {
   return (
     <footer className="py-6 lg:py-9">
       <div className={`${styles.container} ${styles.flexCenter} flex-col`}>

@@ -1,10 +1,17 @@
+import * as React from "react";
 import { quotes } from "../assets";
 
-const FeedbackCard = ({ content, name, title }) => {
-  const splitter = name =>
+interface IProps {
+  content: string;
+  name: string;
+  title: string;
+}
+
+const FeedbackCard: React.FC<IProps> = ({ content, name, title }): JSX.Element => {
+  const splitter = (name: string): string =>
     name
       .split(" ")
-      .map(i => i.charAt().toUpperCase())
+      .map((i: string) => i.charAt(0))
       .join("");
 
   return (

@@ -1,19 +1,20 @@
 import { airbnb, binance, coinbase, dropbox, facebook, instagram, linkedin, send, shield, star, twitter } from "../assets";
+import { IClients, IFeatures, IFeedbacks, IFooterLinks, INavLinks, ISocials, IStatistics } from "../interfaces";
 
-export const navLinks = [
+export const navLinks: INavLinks[] = [
   { title: "Bosh Sahifa", path: "#" },
   { title: "Mahsulot", path: "#product" },
   { title: "Xizmatlar", path: "#services" },
   { title: "Mijozlar", path: "#clients" },
 ];
 
-export const statistics = [
+export const statistics: IStatistics[] = [
   { id: 1, title: "Foydalanuvchi Faol", value: "93K+" },
   { id: 2, title: "Kompaniya Homiyligida", value: "100+" },
   { id: 3, title: "Tranzaksiya", value: "110M+" },
 ];
 
-export const features = [
+export const features: IFeatures[] = [
   {
     id: 1,
     icon: star,
@@ -34,7 +35,7 @@ export const features = [
   },
 ];
 
-export const feedbacks = [
+export const feedbacks: IFeedbacks[] = [
   {
     id: 1,
     content: "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver",
@@ -55,7 +56,7 @@ export const feedbacks = [
   },
 ];
 
-export const footerLinks = [
+export const footerLinks: IFooterLinks[] = [
   {
     title: "Jamiyat",
     links: [
@@ -83,14 +84,14 @@ export const footerLinks = [
   },
 ];
 
-export const socials = [
+export const socials: ISocials[] = [
   { id: "social-1", link: "https://instagram.com/", icon: instagram },
   { id: "social-2", link: "https://facebook.com/", icon: facebook },
   { id: "social-3", link: "https://twitter.com/", icon: twitter },
   { id: "social-4", link: "https://linkedin.com/", icon: linkedin },
 ];
 
-export const clients = [
+export const clients: IClients[] = [
   { id: "client-1", logo: airbnb },
   { id: "client-2", logo: binance },
   { id: "client-3", logo: coinbase },

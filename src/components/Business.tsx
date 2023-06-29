@@ -1,8 +1,10 @@
+import * as React from "react";
 import { features } from "../constants/constants";
 import { layout, styles } from "../constants/styles";
-import { Button, FeatureCard } from "./";
+import { Button, FeatureCard } from ".";
+import { IFeatures } from "../interfaces";
 
-const Business = () => {
+const Business: React.FC = (): JSX.Element => {
   return (
     <section className={layout.section} id="features">
       <div className={`${styles.container} ${layout.wrapper}`}>
@@ -19,8 +21,8 @@ const Business = () => {
           <Button>Boshlash</Button>
         </div>
         <div className={`${layout.sectionImage} flex-col ${layout.v1}`}>
-          {features.map((feature, idx) => (
-            <FeatureCard key={feature.id} idx={idx} {...feature} />
+          {features.map((feature: IFeatures) => (
+            <FeatureCard key={feature.id} {...feature} />
           ))}
         </div>
       </div>

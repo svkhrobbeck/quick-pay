@@ -1,7 +1,8 @@
-import { layout, styles } from "../constants/styles";
-import { Button } from "./";
+import * as React from "react";
+import { styles } from "../constants/styles";
+import { Button } from ".";
 
-const CTA = () => {
+const CTA: React.FC = (): JSX.Element => {
   return (
     <section className={`mb-12`} id="services">
       <div className={styles.container}>

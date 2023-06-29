@@ -1,7 +1,8 @@
+import * as React from "react";
 import { apple, bill, google } from "../assets";
 import { layout, styles } from "../constants/styles";
 
-const Billing = () => {
+const Billing: React.FC = (): JSX.Element => {
   return (
     <section className={layout.section} id="services">
       <div className={`${styles.container} ${layout.wrapperReverse}`}>
