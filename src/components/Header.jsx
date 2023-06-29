@@ -10,7 +10,7 @@ const Header = () => {
   const handleToggleNav = () => setIsNavOpen(prev => !prev);
 
   return (
-    <header className="bg-primary w-full py-6 z-100">
+    <header className="bg-primary py-6 z-[100] sticky top-0">
       <div className={styles.flexBetween + " " + styles.container}>
         <img className="w-[130px] cursor-pointer" src={logo} alt="logo quick-pay" />
 
@@ -31,7 +31,7 @@ const Header = () => {
                 } sm:[&:not(:last-child)]:mr-9 mx-2 font-montserrat font-medium sm:font-normal hover:text-secondary transition-all duration-500`}
                 key={path}
               >
-                <a className="text-inherit" href={"#" + path} onClick={() => setIsActive(path)}>
+                <a className="text-inherit" href={path} onClick={() => setIsActive(path)}>
                   {title}
                 </a>
               </li>
