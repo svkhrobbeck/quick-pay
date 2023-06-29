@@ -3,7 +3,7 @@ import { layout, styles } from "../constants/styles";
 
 const Billing = () => {
   return (
-    <section className={layout.section} id="product">
+    <section className={layout.section} id="services">
       <div className={`${styles.container} ${layout.wrapperReverse}`}>
         <div className={`${layout.sectionImage} ${layout.v2} relative`}>
           <img className="w-full h-auto" src={bill} alt="card" />
