@@ -5,10 +5,10 @@ import { navLinks } from "../constants/constants";
 import { styles } from "../constants/styles";
 
 const Header: React.FC = (): JSX.Element => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isActive, setIsActive] = useState("#");
+  const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
+  const [isActive, setIsActive] = useState<string>("#");
 
-  const handleToggleNav = () => setIsNavOpen(prev => !prev);
+  const handleToggleNav = (): void => setIsNavOpen(prev => !prev);
 
   return (
     <header className="bg-primary py-6 z-[100] sticky top-0">
@@ -32,7 +32,7 @@ const Header: React.FC = (): JSX.Element => {
                 } sm:[&:not(:last-child)]:mr-9 mx-2 font-montserrat font-medium sm:font-normal hover:text-secondary transition-all duration-500`}
                 key={path}
               >
-                <a className="text-inherit" href={path} onClick={() => setIsActive(path)}>
+                <a className="text-inherit" href={path} onClick={(): void => setIsActive(path)}>
                   {title}
                 </a>
               </li>
