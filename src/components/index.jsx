@@ -6,3 +6,4 @@ export { default as Contract } from "./Contract";
 export { default as Billing } from "./Billing";
 export { default as Button } from "./Button";
 export { default as Business } from "./Business";
+export { default as Testimonials } from "./Testimonials";
