@@ -1,4 +1,4 @@
-import { facebook, instagram, linkedin, send, shield, star, twitter } from "../assets";
+import { airbnb, binance, coinbase, dropbox, facebook, instagram, linkedin, send, shield, star, twitter } from "../assets";
 
 export const navLinks = [
   { title: "Bosh Sahifa", path: "#" },
