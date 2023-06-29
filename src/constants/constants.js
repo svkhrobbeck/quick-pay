@@ -1,11 +1,10 @@
-import { send } from "vite";
-import { shield, star } from "../assets";
+import { facebook, instagram, linkedin, send, shield, star, twitter } from "../assets";
 
 export const navLinks = [
-  { title: "Bosh Sahifa", path: "home" },
-  { title: "Xizmatlar", path: "services" },
-  { title: "Mahsulot", path: "product" },
-  { title: "Mijozlar", path: "clients" },
+  { title: "Bosh Sahifa", path: "#" },
+  { title: "Mahsulot", path: "#product" },
+  { title: "Xizmatlar", path: "#services" },
+  { title: "Mijozlar", path: "#clients" },
 ];
 
 export const statistics = [
@@ -33,4 +32,60 @@ export const features = [
     title: "Balansni o'tkazish",
     content: "Balansni o'tkazish kredit kartasi sizga foizlarni to'lashda ko'p pul tejash imkonini beradi.",
   },
+];
+
+export const feedbacks = [
+  {
+    id: 1,
+    content: "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver",
+    name: "Herman Jensen",
+    title: "Founder & Leader",
+  },
+  {
+    id: 2,
+    content: "Money makes your life easier. If you're lucky to have it. you;re lucky",
+    name: "Steve Mark",
+    title: "Founder & Leader",
+  },
+  {
+    id: 3,
+    content: "It is usually people in the money business, finance and international trade that are really rich.",
+    name: "Ken Gallagher",
+    title: "Founder & Leader",
+  },
+];
+
+export const footerLinks = [
+  {
+    title: "Jamiyat",
+    links: [
+      { name: "Yordam Markazi", link: "https://www.hoobank.com/help-center/" },
+      { name: "Hamkorlar", link: "https://www.hoobank.com/partners/" },
+      { name: "Takliflar", link: "https://www.hoobank.com/suggestions/" },
+      { name: "Blog", link: "https://www.hoobank.com/blog/" },
+      { name: "Yangiliklar", link: "https://www.hoobank.com/newsletters/" },
+    ],
+  },
+  {
+    title: "Foydali havola",
+    links: [
+      { name: "Kontent", link: "https://www.soatov.uz/content/" },
+      { name: "Qanday ishlaydi", link: "https://www.soatov.uz/how-it-works/" },
+      { name: "Shartlar & xizmatlar", link: "https://www.soatov.uz/terms-and-services/" },
+    ],
+  },
+  {
+    title: "Hamkor",
+    links: [
+      { name: "Bizning hamkorimiz", link: "https://www.soatov.uz/our-partners/" },
+      { name: "Hamkor bo'ling", link: "https://www.soatov.uz/become-a-partner/" },
+    ],
+  },
+];
+
+export const socials = [
+  { id: "social-1", link: "https://instagram.com/", icon: instagram },
+  { id: "social-2", link: "https://facebook.com/", icon: facebook },
+  { id: "social-3", link: "https://twitter.com/", icon: twitter },
+  { id: "social-4", link: "https://linkedin.com/", icon: linkedin },
 ];
