@@ -1,5 +1,5 @@
 // components
-import { Footer, Header, Hero } from "./components";
+import { Billing, Business, Contract, Footer, Header, Hero, Statistics } from "./components";
 
 const App = () => {
   return (
@@ -8,6 +8,10 @@ const App = () => {
       <Header />
       <main className="flex-grow-[1] bg-primary">
         <Hero />
+        <Statistics />
+        <Contract />
+        <Billing />
+        <Business />
       </main>
       <Footer />
     </>
