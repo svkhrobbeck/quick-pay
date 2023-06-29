@@ -1,7 +1,8 @@
 // components
+import * as React from "react";
 import { Billing, Business, CTA, Clients, Contract, Footer, Header, Hero, Statistics, Testimonials } from "./components";
 
-const App = () => {
+const App: React.FC = (): JSX.Element => {
   return (
     <>
       <h1 className="visually-hidden">Quick Pay</h1>
