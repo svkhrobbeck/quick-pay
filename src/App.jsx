@@ -1,15 +1,13 @@
-import { Route, Routes } from "react-router-dom";
-import { Footer, Header } from "./components";
-import { Home } from "./pages";
+// components
+import { Footer, Header, Hero } from "./components";
 
 const App = () => {
   return (
     <>
+      <h1 className="visually-hidden">Quick Pay</h1>
       <Header />
-      <main className="flex-grow-[1]">
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+      <main className="flex-grow-[1] bg-primary">
+        <Hero />
       </main>
       <Footer />
     </>
