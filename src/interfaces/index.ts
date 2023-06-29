@@ -40,3 +40,23 @@ export interface IClients {
   id: string;
   logo: string;
 }
+
+export interface IStyles {
+  flexCenter: string;
+  flexStart: string;
+  flexBetween: string;
+  container: string;
+  paragraph: string;
+  heading1: string;
+  heading2: string;
+}
+
+export interface ILayout {
+  section: string;
+  wrapper: string;
+  wrapperReverse: string;
+  sectionInfo: string;
+  sectionImage: string;
+  v1: string;
+  v2: string;
+}

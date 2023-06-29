@@ -1,4 +1,6 @@
-export const styles = {
+import { ILayout, IStyles } from "../interfaces";
+
+export const styles: IStyles = {
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-start items-center",
   flexBetween: "flex justify-between items-center",
@@ -10,7 +12,7 @@ export const styles = {
     "font-montserrat font-semibold text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] text-white leading-[25px] sm:leading-[35px] md:leading-[45px] lg:leading-[55px] xl:leading-[65px]",
 };
 
-export const layout = {
+export const layout: ILayout = {
   section: "py-8 md:py-16",
   wrapper: "flex md:flex-row flex-col",
   wrapperReverse: "flex md:flex-row flex-col-reverse",
