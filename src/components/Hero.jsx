@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section className="font-montserrat py-6 lg:py-9 xl:py-12" id="home">
+    <section className="font-montserrat py-6 lg:py-9 xl:py-12">
       <div className={`${styles.flexBetween} ${styles.container} lg:flex-row flex-col`}>
         <div className="mb-10 lg:mb-0 flex mr-0 lg:mr-[60px] max-w-[600px] lg:max-w-full h-auto">
           <img className="w-full h-auto rounded-md" src={robot} alt="robot ai" />
