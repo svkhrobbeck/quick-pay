@@ -5,7 +5,7 @@ import { styles } from "../constants/styles";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isActive, setIsActive] = useState("home");
+  const [isActive, setIsActive] = useState("#");
 
   const handleToggleNav = () => setIsNavOpen(prev => !prev);
 
