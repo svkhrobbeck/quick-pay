@@ -10,3 +10,5 @@ export { default as FeatureCard } from "./FeatureCard";
 export { default as CTA } from "./CTA";
 export { default as Testimonials } from "./Testimonials";
 export { default as FeedbackCard } from "./FeedbackCard";
+export { default as Clients } from "./Clients";
+export { default as ClientCard } from "./ClientCard";
