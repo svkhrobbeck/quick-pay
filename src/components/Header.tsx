@@ -22,7 +22,7 @@ const Header: React.FC = (): JSX.Element => {
         <nav
           className={`${
             isNavOpen ? "block" : "hidden"
-          } bg-primary sm:bg-transparent w-full sm:w-auto left-0 absolute sm:static top-[90px] sm:block sidebar py-4 px-3 sm:py-0 sm:px-0`}
+          } bg-primary sm:bg-transparent w-full sm:w-auto left-0 absolute sm:static top-[89px] sm:block sidebar py-4 px-3 sm:py-0 sm:px-0`}
         >
           <ul className="list-none flex w-full sm:w-auto flex-wrap sm:flex-nowrap justify-center sm:justify-end">
             {navLinks.map(({ title, path }) => (
