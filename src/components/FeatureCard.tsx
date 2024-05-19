@@ -1,6 +1,7 @@
 import * as React from "react";
-import { styles } from "../constants/styles";
+
 import { IFeatures } from "../interfaces";
+import { styles } from "../constants/styles";
 
 const FeatureCard: React.FC<IFeatures> = ({ icon, title, content }): JSX.Element => {
   return (

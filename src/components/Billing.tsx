@@ -19,8 +19,8 @@ const Billing: React.FC = (): JSX.Element => {
             Osongina Boshqaring
           </h2>
           <p className={`${styles.paragraph} max-w-[600px] mb-4`}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus dolorum nemo eius debitis labore repellat atque est ea harum
-            dolor.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus dolorum nemo eius debitis labore repellat
+            atque est ea harum dolor.
           </p>
 
           <div className="flex flex-row flex-wrap mt-6 sm:mt-10">

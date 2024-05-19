@@ -1,6 +1,8 @@
 import * as React from "react";
-import { clients } from "../constants/constants";
+
 import { styles } from "../constants/styles";
+import { clients } from "../constants/constants";
+
 import { ClientCard } from ".";
 
 const Clients: React.FC = (): JSX.Element => {

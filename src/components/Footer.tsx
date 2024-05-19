@@ -1,7 +1,8 @@
 import * as React from "react";
-import { logo } from "../assets";
+
 import { footerLinks, socials } from "../constants/constants";
 import { styles } from "../constants/styles";
+import { logo } from "../assets";
 import { FooterLinks } from ".";
 
 const Footer: React.FC = (): JSX.Element => {
@@ -11,7 +12,9 @@ const Footer: React.FC = (): JSX.Element => {
         <div className={`${styles.flexCenter} flex-col lg:flex-row w-full mb-4`}>
           <div className={`flex-1 flex-col justify-start mr-10`}>
             <img className="w-[250px] h-auto mb-4" src={logo} alt="quick-pay logo" />
-            <p className={`${styles.paragraph} max-w-[370px]`}>To'lovlarni oson, ishonchli va xavfsiz qilishning yangi usuli.</p>
+            <p className={`${styles.paragraph} max-w-[370px]`}>
+              To'lovlarni oson, ishonchli va xavfsiz qilishning yangi usuli.
+            </p>
           </div>
 
           <div className="flex-[1.5] w-full gap-[40px] flex flex-row justify-between flex-wrap mt-10 lg:mt-0">

@@ -1,6 +1,7 @@
-import { discount, robot } from "../assets";
 import * as React from "react";
+
 import { styles } from "../constants/styles";
+import { discount, robot } from "../assets";
 import Button from "./Button";
 
 const Hero: React.FC = (): JSX.Element => {
@@ -26,8 +27,8 @@ const Hero: React.FC = (): JSX.Element => {
           </h2>
 
           <p className={`${styles.paragraph} lg:max-w-[700px] mb-4`}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quasi neque accusamus, laboriosam numquam nihil fugit molestiae
-            rerum vitae exercitationem.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quasi neque accusamus, laboriosam numquam
+            nihil fugit molestiae rerum vitae exercitationem.
           </p>
 
           <Button styles="mr-auto">Boshlash</Button>

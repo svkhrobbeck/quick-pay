@@ -1,7 +1,9 @@
 import * as React from "react";
+
 import { card } from "../assets";
-import { Button } from ".";
 import { layout, styles } from "../constants/styles";
+
+import { Button } from ".";
 
 const Contract: React.FC = (): JSX.Element => {
   return (
@@ -14,8 +16,8 @@ const Contract: React.FC = (): JSX.Element => {
             shartnomaga ega bo'ling
           </h2>
           <p className={`${styles.paragraph} max-w-[600px] mb-4`}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus dolorum nemo eius debitis labore repellat atque est ea harum
-            dolor.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus dolorum nemo eius debitis labore repellat
+            atque est ea harum dolor.
           </p>
           <Button>Boshlash</Button>
         </div>

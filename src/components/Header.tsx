@@ -1,8 +1,9 @@
 import * as React from "react";
 import { useState } from "react";
+
+import { styles } from "../constants/styles";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants/constants";
-import { styles } from "../constants/styles";
 
 const Header: React.FC = (): JSX.Element => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
