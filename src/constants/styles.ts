@@ -4,7 +4,7 @@ export const styles: IStyles = {
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-start items-center",
   flexBetween: "flex justify-between items-center",
-  container: "max-w-[1536px] mx-0 lg:mx-auto px-5",
+  container: "max-w-[1360px] mx-0 lg:mx-auto px-5",
   paragraph: "font-montserrat font-normal text-lightWhite text-[15px] sm:text-[17px]",
   heading1:
     "font-montserrat font-semibold text-[30px] sm:text-[36px] md:text-[40px] lg:text-[45px] text-white leading-[1.2]",

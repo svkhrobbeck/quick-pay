@@ -13,7 +13,7 @@ export default {
           "linear-gradient(158deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 30%, #5ce1e6 52%, #33bbcf 90%)",
         "gradient-black": "linear-gradient(-168deg, #ffffff -279%, #6d6d6d -78%, #11101d 92%)",
       }),
-      boxShadow: theme => ({
+      boxShadow: () => ({
         card: "0px 20px 100px -10px rgba(66, 71, 91, 0.3)",
       }),
       colors: {
