@@ -14,7 +14,7 @@ const Header: React.FC = (): JSX.Element => {
   return (
     <header className="bg-primary py-3 z-[100] sticky top-0">
       <div className={cx(styles.flexBetween, styles.container)}>
-        <img className="w-[130px] cursor-pointer" src={logo} alt="logo quick-pay" />
+        <img className="w-[110px] cursor-pointer" src={logo} alt="logo quick-pay" />
 
         <button className="sm:hidden inline-flex" onClick={handleToggleNav}>
           <img className="w-[24px] h-[24px] object-contain" src={isNavOpen ? close : menu} alt="nav toggler" />

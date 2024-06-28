@@ -12,7 +12,7 @@ const Footer: React.FC = (): JSX.Element => {
       <div className="flex-col">
         <div className={cx("flex items-start flex-col lg:flex-row w-full mb-4", styles.container)}>
           <div className="flex-1 flex-col justify-start lg:mr-10">
-            <img className="w-[150px] h-auto mb-4" src={logo} alt="quick-pay logo" />
+            <img className="w-[130px] h-auto mb-4" src={logo} alt="quick-pay logo" />
             <p className={cx("max-w-[370px]", styles.paragraph)}>
               To'lovlarni oson, ishonchli va xavfsiz qilishning yangi usuli.
             </p>
