@@ -8,25 +8,27 @@ import { FooterLinks } from ".";
 
 const Footer: React.FC = (): JSX.Element => {
   return (
-    <footer className="py-6 lg:py-9">
-      <div className={cx("flex-col", styles.container, styles.flexCenter)}>
-        <div className={cx("flex-col lg:flex-row w-full mb-4", styles.flexCenter)}>
-          <div className="flex-1 flex-col justify-start mr-10">
-            <img className="w-[250px] h-auto mb-4" src={logo} alt="quick-pay logo" />
+    <footer className="pt-5 lg:pt-8">
+      <div className="flex-col">
+        <div className={cx("flex items-start flex-col lg:flex-row w-full mb-4", styles.container)}>
+          <div className="flex-1 flex-col justify-start lg:mr-10">
+            <img className="w-[150px] h-auto mb-4" src={logo} alt="quick-pay logo" />
             <p className={cx("max-w-[370px]", styles.paragraph)}>
               To'lovlarni oson, ishonchli va xavfsiz qilishning yangi usuli.
             </p>
           </div>
 
-          <div className="flex-[1.5] w-full gap-[40px] flex flex-row justify-between flex-wrap mt-10 lg:mt-0">
+          <div className="flex-[1.5] w-full gap-y-[20px] gap-x-[30px] flex flex-row justify-between flex-wrap mt-8 lg:mt-0">
             {footerLinks.map(link => (
               <FooterLinks key={link.title} {...link} />
             ))}
           </div>
         </div>
 
-        <div className={cx("w-full flex-col lg:flex-row border-t-[1px] border-top-[#3f3e45]", styles.flexBetween)}>
-          <p className="font-montserrat font-normal pt-6 text-center text-[18px] leading-[27px] text-white">
+        <div className="border-t-[1px] border-top-[#3f3e45]" />
+
+        <div className={cx("w-full py-4 flex-col lg:flex-row", styles.flexBetween, styles.container)}>
+          <p className="font-montserrat font-normal text-center text-[14px] md:text-[16px] leading-[1.5] text-white">
             ©️Copyright 2023 QuickPay. All Rights Reserved
           </p>
 
