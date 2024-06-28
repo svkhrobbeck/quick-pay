@@ -4,20 +4,18 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-  height: 100%;
-}
+@layer base {
+  html {
+    @apply h-full box-border;
+  }
 
-body {
-  margin: 0;
-  height: 100%;
-}
+  body {
+    @apply m-0 h-full;
+  }
 
-#root {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+  #root {
+    @apply min-h-full flex flex-col bg-primary;
+  }
 }
 
 .sidebar {
@@ -33,19 +31,6 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .text-fill {

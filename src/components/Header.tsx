@@ -1,19 +1,19 @@
 import * as React from "react";
-import { useState } from "react";
+import cx from "classnames";
 
 import { styles } from "../constants/styles";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants/constants";
 
 const Header: React.FC = (): JSX.Element => {
-  const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
-  const [isActive, setIsActive] = useState<string>("#");
+  const [isNavOpen, setIsNavOpen] = React.useState<boolean>(false);
+  const [isActive, setIsActive] = React.useState<string>("#");
 
   const handleToggleNav = (): void => setIsNavOpen(prev => !prev);
 
   return (
-    <header className="bg-primary py-6 z-[100] sticky top-0">
-      <div className={styles.flexBetween + " " + styles.container}>
+    <header className="bg-primary py-3 z-[100] sticky top-0">
+      <div className={cx(styles.flexBetween, styles.container)}>
         <img className="w-[130px] cursor-pointer" src={logo} alt="logo quick-pay" />
 
         <button className="sm:hidden inline-flex" onClick={handleToggleNav}>
@@ -21,16 +21,18 @@ const Header: React.FC = (): JSX.Element => {
         </button>
 
         <nav
-          className={`${
+          className={cx(
+            "bg-primary sm:bg-transparent w-full sm:w-auto left-0 absolute sm:static top-[89px] sm:block sidebar py-4 px-3 sm:py-0 sm:px-0",
             isNavOpen ? "block" : "hidden"
-          } bg-primary sm:bg-transparent w-full sm:w-auto left-0 absolute sm:static top-[89px] sm:block sidebar py-4 px-3 sm:py-0 sm:px-0`}
+          )}
         >
           <ul className="list-none flex w-full sm:w-auto flex-wrap sm:flex-nowrap justify-center sm:justify-end">
             {navLinks.map(({ title, path }) => (
               <li
-                className={`${
+                className={cx(
+                  "sm:[&:not(:last-child)]:mr-9 mx-2 font-montserrat font-medium sm:font-normal hover:text-secondary transition-all duration-500",
                   isActive === path ? "text-white" : "text-lightWhite"
-                } sm:[&:not(:last-child)]:mr-9 mx-2 font-montserrat font-medium sm:font-normal hover:text-secondary transition-all duration-500`}
+                )}
                 key={path}
               >
                 <a className="text-inherit" href={path} onClick={(): void => setIsActive(path)}>

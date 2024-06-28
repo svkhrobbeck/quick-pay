@@ -1,3 +1,4 @@
-# quick-pay
+# QuickPay Application
+
 My first TypeScript+React application
-<a href="https://sbk-quick-pay.netlify.app" target="_blank">View</a>
+<a href="https://quick-pay.soatov.uz" target="_blank">View</a>

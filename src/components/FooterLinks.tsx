@@ -1,4 +1,5 @@
 import * as React from "react";
+
 import { IFooterLinks } from "../interfaces";
 
 const FooterLinks: React.FC<IFooterLinks> = ({ title, links }): JSX.Element => {

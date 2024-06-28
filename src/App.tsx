@@ -1,11 +1,22 @@
 // components
 import * as React from "react";
-import { Billing, Business, CTA, Clients, Contract, Footer, Header, Hero, Statistics, Testimonials } from "./components";
+import {
+  Billing,
+  Business,
+  CTA,
+  Clients,
+  Contract,
+  Footer,
+  Header,
+  Hero,
+  Statistics,
+  Testimonials,
+} from "./components";
 
 const App: React.FC = (): JSX.Element => {
   return (
     <>
-      <h1 className="visually-hidden">Quick Pay</h1>
+      <h1 className="sr-only">Quick Pay</h1>
       <Header />
       <main className="flex-grow-[1]">
         <Hero />
