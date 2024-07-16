@@ -6,7 +6,7 @@
 
 @layer base {
   html {
-    @apply h-full box-border;
+    @apply h-full box-border scroll-smooth;
   }
 
   body {
