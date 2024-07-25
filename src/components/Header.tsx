@@ -1,9 +1,10 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import cx from "classnames";
 
-import { styles } from "../constants/styles";
-import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants/constants";
+import { close, logo, menu } from "../assets";
+import { styles } from "../constants/styles";
 
 const Header: React.FC = (): JSX.Element => {
   const [isNavOpen, setIsNavOpen] = React.useState<boolean>(false);
@@ -13,8 +14,10 @@ const Header: React.FC = (): JSX.Element => {
 
   return (
     <header className="bg-primary py-3 z-[100] sticky top-0">
-      <div className={cx(styles.flexBetween, styles.container)}>
-        <img className="w-[110px] cursor-pointer" src={logo} alt="logo quick-pay" />
+      <div className={cx("container", styles.flexBetween)}>
+        <Link to="/">
+          <img className="w-[110px] cursor-pointer" src={logo} alt="logo quick-pay" />
+        </Link>
 
         <button className="sm:hidden inline-flex" onClick={handleToggleNav}>
           <img className="w-[24px] h-[24px] object-contain" src={isNavOpen ? close : menu} alt="nav toggler" />

@@ -1,8 +1,8 @@
 import * as React from "react";
 
-import { IFooterLinks } from "../interfaces";
+import { IFooterLink } from "../interfaces";
 
-const FooterLinks: React.FC<IFooterLinks> = ({ title, links }): JSX.Element => {
+const FooterLinks: React.FC<IFooterLink> = ({ title, links }): JSX.Element => {
   return (
     <div className="flex flex-col my-0 lg:my-4 min-w-[200px]" key={title}>
       <h4 className="font-montserrat mb-3 font-medium text-[17px] leading-[1.5] text-white">{title}</h4>

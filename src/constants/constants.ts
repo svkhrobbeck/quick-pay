@@ -1,41 +1,42 @@
-import { airbnb, binance, coinbase, dropbox, facebook, instagram, linkedin, send, shield, star, twitter } from "../assets";
-import { IClients, IFeatures, IFeedbacks, IFooterLinks, INavLinks, ISocials, IStatistics } from "../interfaces";
+import * as Types from "../interfaces";
+import * as icons from "../assets";
 
-export const navLinks: INavLinks[] = [
+export const navLinks: Types.INavLink[] = [
   { title: "Bosh Sahifa", path: "#" },
   { title: "Mahsulot", path: "#product" },
   { title: "Xizmatlar", path: "#services" },
   { title: "Mijozlar", path: "#clients" },
 ];
 
-export const statistics: IStatistics[] = [
+export const statistics: Types.IStat[] = [
   { id: 1, title: "Foydalanuvchi Faol", value: "93K+" },
   { id: 2, title: "Kompaniya Homiyligida", value: "100+" },
   { id: 3, title: "Tranzaksiya", value: "110M+" },
 ];
 
-export const features: IFeatures[] = [
+export const features: Types.IFeature[] = [
   {
     id: 1,
-    icon: star,
+    icon: icons.star,
     title: "Mukofotlar",
     content: "Eng yaxshi kredit kartalari, aksiyalar va sovrinlarning ajoyib kombinatsiyasini taklif qilamiz.",
   },
   {
     id: 2,
-    icon: shield,
+    icon: icons.shield,
     title: "100% Himoyalangan",
-    content: "Ma'lumotlaringiz va tranzaktsiyalaringiz xavfsiz ekanligiga ishonch hosil qilish uchun faol choralar ko'ramiz",
+    content:
+      "Ma'lumotlaringiz va tranzaktsiyalaringiz xavfsiz ekanligiga ishonch hosil qilish uchun faol choralar ko'ramiz",
   },
   {
     id: 3,
-    icon: send,
+    icon: icons.send,
     title: "Balansni o'tkazish",
     content: "Balansni o'tkazish kredit kartasi sizga foizlarni to'lashda ko'p pul tejash imkonini beradi.",
   },
 ];
 
-export const feedbacks: IFeedbacks[] = [
+export const feedbacks: Types.IFeedback[] = [
   {
     id: 1,
     content: "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver",
@@ -56,7 +57,7 @@ export const feedbacks: IFeedbacks[] = [
   },
 ];
 
-export const footerLinks: IFooterLinks[] = [
+export const footerLinks: Types.IFooterLink[] = [
   {
     title: "Jamiyat",
     links: [
@@ -84,16 +85,16 @@ export const footerLinks: IFooterLinks[] = [
   },
 ];
 
-export const socials: ISocials[] = [
-  { id: "social-1", link: "https://instagram.com/", icon: instagram },
-  { id: "social-2", link: "https://facebook.com/", icon: facebook },
-  { id: "social-3", link: "https://twitter.com/", icon: twitter },
-  { id: "social-4", link: "https://linkedin.com/", icon: linkedin },
+export const socials: Types.ISocial[] = [
+  { id: "social-1", link: "https://instagram.com/svkhrobbeck", icon: icons.instagram },
+  { id: "social-2", link: "https://facebook.com/", icon: icons.facebook },
+  { id: "social-3", link: "https://twitter.com/", icon: icons.twitter },
+  { id: "social-4", link: "https://linkedin.com/", icon: icons.linkedin },
 ];
 
-export const clients: IClients[] = [
-  { id: "client-1", logo: airbnb },
-  { id: "client-2", logo: binance },
-  { id: "client-3", logo: coinbase },
-  { id: "client-4", logo: dropbox },
+export const clients: Types.IClient[] = [
+  { id: "client-1", logo: icons.airbnb },
+  { id: "client-2", logo: icons.binance },
+  { id: "client-3", logo: icons.coinbase },
+  { id: "client-4", logo: icons.dropbox },
 ];

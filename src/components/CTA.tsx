@@ -7,7 +7,7 @@ import { Button } from ".";
 const CTA: React.FC = (): JSX.Element => {
   return (
     <section className="mb-12" id="services">
-      <div className={styles.container}>
+      <div className="container">
         <div
           className={cx(
             "flex-col text-center md:text-left lg:flex-row bg-gradient-black shadow-card bg-slate-800 py-6 lg:py-12 px-8 lg:px-16 rounded-[20px]",

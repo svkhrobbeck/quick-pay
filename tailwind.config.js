@@ -3,6 +3,17 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: "15px",
+        screens: {
+          sm: "570px",
+          md: "750px",
+          lg: "1000px",
+          xl: "1140px",
+          "2xl": "1280px",
+        },
+      },
       backgroundImage: theme => ({
         "gradient-primary": `linear-gradient(130deg, ${theme("colors.lightBrown")}, ${theme("colors.darkBrown")})`,
         "gradient-secondary":

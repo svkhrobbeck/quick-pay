@@ -8,7 +8,7 @@ import { ClientCard } from ".";
 
 const Clients: React.FC = (): JSX.Element => {
   return (
-    <section className={cx("my-4", styles.flexCenter, styles.container)} id="clients">
+    <section className={cx("my-4 container", styles.flexCenter)} id="clients">
       <div className="flex justify-center items-center lg:justify-between gap-[50px] flex-wrap w-full">
         {clients.map(client => (
           <ClientCard key={client.id} {...client} />

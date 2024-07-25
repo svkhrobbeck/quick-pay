@@ -9,7 +9,7 @@ import { Button } from ".";
 const Contract: React.FC = (): JSX.Element => {
   return (
     <section className={layout.section} id="product">
-      <div className={cx(styles.container, layout.wrapper)}>
+      <div className={cx("container", layout.wrapper)}>
         <div className={layout.sectionInfo}>
           <h2 className={cx("mb-5", styles.heading2)}>
             Bir necha oson qadamda muqobil

@@ -1,62 +1,42 @@
-export interface INavLinks {
+export interface INavLink {
   title: string;
   path: string;
 }
 
-export interface IStatistics {
+export interface IStat {
   id: number;
   title: string;
   value: string;
 }
 
-export interface IFeatures {
+export interface IFeature {
   id?: number;
   icon?: string;
   title: string;
   content: string;
 }
 
-export interface IFeedbacks extends IFeatures {
+export interface IFeedback extends IFeature {
   name: string;
 }
 
-export interface ILinkObj {
+export interface ILink {
   name: string;
   link: string;
 }
 
-export interface IFooterLinks {
+export interface IFooterLink {
   title: string;
-  links: ILinkObj[];
+  links: ILink[];
 }
 
-export interface ISocials {
+export interface ISocial {
   id: string;
   link: string;
   icon: string;
 }
 
-export interface IClients {
+export interface IClient {
   id: string;
   logo: string;
-}
-
-export interface IStyles {
-  flexCenter: string;
-  flexStart: string;
-  flexBetween: string;
-  container: string;
-  paragraph: string;
-  heading1: string;
-  heading2: string;
-}
-
-export interface ILayout {
-  section: string;
-  wrapper: string;
-  wrapperReverse: string;
-  sectionInfo: string;
-  sectionImage: string;
-  v1: string;
-  v2: string;
 }

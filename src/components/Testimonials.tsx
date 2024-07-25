@@ -8,7 +8,7 @@ import { FeedbackCard } from ".";
 const Testimonials: React.FC = (): JSX.Element => {
   return (
     <section className="mb-12">
-      <div className={styles.container}>
+      <div className="container">
         <div className="flex flex-col relative py-6 lg:py-12">
           <div className="absolute z-0 w-[60%] h-[60%] left-1/3 rounded-full bg-gradient-blue bottom-[40px] blur-[200px]" />
 

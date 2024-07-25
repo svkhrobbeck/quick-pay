@@ -7,7 +7,7 @@ import { layout, styles } from "../constants/styles";
 const Billing: React.FC = (): JSX.Element => {
   return (
     <section className={layout.section} id="services">
-      <div className={cx(styles.container, layout.wrapperReverse)}>
+      <div className={cx("container", layout.wrapperReverse)}>
         <div className={cx("relative", layout.sectionImage, layout.v2)}>
           <img className="w-full h-auto" src={bill} alt="card" />
 

@@ -10,7 +10,7 @@ const Footer: React.FC = (): JSX.Element => {
   return (
     <footer className="pt-5 lg:pt-8">
       <div className="flex-col">
-        <div className={cx("flex items-start flex-col lg:flex-row w-full mb-4", styles.container)}>
+        <div className="container flex items-start flex-col lg:flex-row w-full mb-4">
           <div className="flex-1 flex-col justify-start lg:mr-10">
             <img className="w-[130px] h-auto mb-4" src={logo} alt="quick-pay logo" />
             <p className={cx("max-w-[370px]", styles.paragraph)}>
@@ -27,7 +27,7 @@ const Footer: React.FC = (): JSX.Element => {
 
         <div className="border-t-[1px] border-top-[#3f3e45]" />
 
-        <div className={cx("w-full py-4 flex-col lg:flex-row", styles.flexBetween, styles.container)}>
+        <div className={cx("w-full py-4 flex-col lg:flex-row container", styles.flexBetween)}>
           <p className="font-montserrat font-normal text-center text-[14px] md:text-[16px] leading-[1.5] text-white">
             ©️Copyright 2023 QuickPay. All Rights Reserved
           </p>
