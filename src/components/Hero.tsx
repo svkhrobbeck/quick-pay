@@ -10,7 +10,7 @@ const Hero: React.FC = (): JSX.Element => {
   return (
     <section className="font-montserrat py-6 lg:py-9 xl:py-12">
       <div className={cx("lg:flex-row flex-col container", styles.flexBetween)}>
-        <div className="mb-10 lg:mb-0 flex mr-0 lg:mr-[60px] max-w-[500px] h-auto">
+        <div className="mb-10 lg:mb-0 flex mr-0 lg:mr-[60px] max-w-[450px] h-auto">
           <img className="w-full h-auto rounded-md" src={robot} alt="robot ai" />
         </div>
 

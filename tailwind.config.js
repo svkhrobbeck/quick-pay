@@ -10,8 +10,7 @@ export default {
           sm: "570px",
           md: "750px",
           lg: "1000px",
-          xl: "1140px",
-          "2xl": "1280px",
+          xl: "1200px",
         },
       },
       backgroundImage: theme => ({

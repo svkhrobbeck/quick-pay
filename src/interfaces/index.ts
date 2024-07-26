@@ -35,8 +35,3 @@ export interface ISocial {
   link: string;
   icon: string;
 }
-
-export interface IClient {
-  id: string;
-  logo: string;
-}

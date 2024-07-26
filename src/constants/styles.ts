@@ -4,11 +4,11 @@ export const styles = {
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-start items-center",
   flexBetween: "flex justify-between items-center",
-  paragraph: "font-montserrat font-normal text-lightWhite text-[15px] sm:text-[17px]",
+  paragraph: "font-montserrat font-normal text-lightWhite text-[14px] sm:text-[16px]",
   heading1:
-    "font-montserrat font-semibold text-[30px] sm:text-[36px] md:text-[40px] lg:text-[45px] text-white leading-[1.2]",
+    "font-montserrat font-semibold text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] text-white leading-[1.2]",
   heading2:
-    "font-montserrat font-semibold text-[18px] sm:text-[20px] md:text-[24px] lg:text-[28px] text-white leading-[1.3]",
+    "font-montserrat font-semibold text-[17px] sm:text-[18px] md:text-[22px] lg:text-[25px] text-white leading-[1.3]",
 };
 
 export const layout = {

@@ -5,6 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 export default defineConfig({
   server: {
     host: true,
+    port: 4000
   },
   build: {
     rollupOptions: {

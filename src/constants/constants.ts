@@ -92,9 +92,4 @@ export const socials: Types.ISocial[] = [
   { id: "social-4", link: "https://linkedin.com/", icon: icons.linkedin },
 ];
 
-export const clients: Types.IClient[] = [
-  { id: "client-1", logo: icons.airbnb },
-  { id: "client-2", logo: icons.binance },
-  { id: "client-3", logo: icons.coinbase },
-  { id: "client-4", logo: icons.dropbox },
-];
+export const clients = [icons.airbnb, icons.binance, icons.coinbase, icons.dropbox];
